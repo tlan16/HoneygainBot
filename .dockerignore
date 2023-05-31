@@ -4,3 +4,8 @@ __pycache__
 *.log
 .env
 .idea
+.env*
+.dockerignore
+docker-compose.yaml
+Dockerfile
+LICENSE

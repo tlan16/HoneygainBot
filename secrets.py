@@ -1,2 +1,4 @@
-email = '<YOUR_HONEYGAIN_EMAIL>'
-password = '<YOUR_HONEYGAIN_PASSWORD>'
+import os
+
+email = os.environ.get('APP_EMAIL')
+password = os.environ.get('APP_PASSWORD')

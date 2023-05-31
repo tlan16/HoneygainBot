@@ -65,6 +65,8 @@ class HoneygainBot:
 
     def login(self):
         self.logger.info(f"Logging in ...")
+        self.logger.info(f"Email: {secrets.email}")
+        self.logger.info(f"Password: {secrets.password.length * '*' }")
         self.driver.get("https://dashboard.honeygain.com/")
         if os.path.exists(config.cookie_path):
             self.logger.info("Found previous cookies. Use cookies and local storages to login")
